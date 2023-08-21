@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualStudioProject ProjectCreator="Intel Fortran" Keyword="Console Application" Version="11.0" ProjectIdGuid="{259ADA53-3295-4B5F-AB88-F60E946A069F}">
+	<Platforms>
+		<Platform Name="Win32"/>
+		<Platform Name="x64"/></Platforms>
+	<Configurations>
+		<Configuration Name="Debug|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Debug|x64" TargetName="$(ProjectName)_$(PlatformName)_$(ConfigurationName)">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" Preprocess="preprocessYes" ErrorLimit="3000" StandardWarnings="standardWarningsF03" DisableSpecificDiagnostics="5268" WarnDeclarations="true" WarnInterfaces="true" Traceback="true" BoundsCheck="true" UninitializedVariablesCheck="true" RuntimeLibrary="rtMultiThreadedDebugDLL" UseMkl="mklSequential"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" LinkLibraryDependencies="false" GenerateManifest="false" GenerateDebugInformation="true" SubSystem="subSystemConsole" StackReserveSize="9999999"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|Win32">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" RuntimeLibrary="rtMultiThreadedDLL"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" SubSystem="subSystemConsole"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
+		<Configuration Name="Release|x64">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" Preprocess="preprocessYes" StandardWarnings="standardWarningsF03" DisableSpecificDiagnostics="5268" UseMkl="mklSequential"/>
+				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" LinkLibraryDependencies="false" GenerateManifest="false" SubSystem="subSystemConsole" StackReserveSize="9999999"/>
+				<Tool Name="VFResourceCompilerTool"/>
+				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
+				<Tool Name="VFCustomBuildTool"/>
+				<Tool Name="VFPreLinkEventTool"/>
+				<Tool Name="VFPreBuildEventTool"/>
+				<Tool Name="VFPostBuildEventTool"/>
+				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration></Configurations>
+	<Files>
+		<Filter Name="Header Files" Filter="fi;fd;h;inc"/>
+		<Filter Name="Resource Files" Filter="rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"/>
+		<Filter Name="Source Files" Filter="f90;for;f;fpp;ftn;def;odl;idl">
+		<Filter Name="MoorDyn">
+		<Filter Name="RegistryFiles">
+		<File RelativePath=".\src\MoorDyn_Registry.txt"/></Filter>
+		<File RelativePath=".\src\MoorDyn.f90"/>
+		<File RelativePath=".\src\MoorDyn_Body.f90"/>
+		<File RelativePath=".\src\MoorDyn_Driver.f90"/>
+		<File RelativePath=".\src\MoorDyn_IO.f90"/>
+		<File RelativePath=".\src\MoorDyn_Line.f90"/>
+		<File RelativePath=".\src\MoorDyn_Misc.f90"/>
+		<File RelativePath=".\src\MoorDyn_Point.f90"/>
+		<File RelativePath=".\src\MoorDyn_Rod.f90"/>
+		<File RelativePath=".\src\MoorDyn_Types.f90"/></Filter>
+		<Filter Name="NetLib">
+		<File RelativePath=".\src\nwtc-library\src\NetLib\fftpack\fftpack4.1.f"/>
+		<File RelativePath=".\src\nwtc-library\src\NetLib\fftpack\NWTC_FFTPACK.f90"/>
+		<File RelativePath=".\src\nwtc-library\src\NetLib\lapack\NWTC_LAPACK.f90"/></Filter>
+		<Filter Name="NWTC_Library">
+		<File RelativePath=".\src\nwtc-library\src\ModMesh.f90"/>
+		<File RelativePath=".\src\nwtc-library\src\ModMesh_Mapping.f90"/>
+		<File RelativePath=".\src\nwtc-library\src\ModMesh_Types.f90"/>
+		<File RelativePath=".\src\nwtc-library\src\NWTC_Base.f90"/>
+		<File RelativePath=".\src\nwtc-library\src\NWTC_IO.f90"/>
+		<File RelativePath=".\src\nwtc-library\src\NWTC_Library.f90"/>
+		<File RelativePath=".\src\nwtc-library\src\NWTC_Library_Types.f90"/>
+		<File RelativePath=".\src\nwtc-library\src\NWTC_Num.f90"/>
+		<File RelativePath=".\src\nwtc-library\src\SingPrec.f90"/>
+		<File RelativePath=".\src\nwtc-library\src\SysIVF.f90"/>
+		<File RelativePath=".\src\nwtc-library\src\VTK.f90"/></Filter>
+		<File RelativePath=".\src\version\VersionInfo.f90"/></Filter></Files>
+	<Globals/></VisualStudioProject>
